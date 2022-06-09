@@ -1,2 +1,2 @@
 # bakala
-grocery store managment system
+grocery store management system
