@@ -33,7 +33,7 @@
         <div class="card m-5">
             <div class="card-body">
                 <h2 class="card-title">Get All Customers</h2>
-                <table>
+                <table class="table">
                     <thead>
                         <tr>
                             <th>ID</th>
@@ -46,6 +46,29 @@
                 <button id="get-all-customers-button" class="btn btn-primary">Get All Customers</button>
             </div>
         </div>
+        <!--  -->
+        <div class="card m-5">
+            <div class="card-body">
+                <h2 class="card-title">Get Customers By Id</h2>
+
+                <div class="md-3">
+                    <label class="form-label">Customer Id</label>
+                    <input class="form-control" id="get-customer-id-field" type="text">
+                </div>
+
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                        </tr>
+                    </thead>
+                    <tbody id="get-customers-table"></tbody>
+                </table>
+                <button id="get-customers-button" class="btn btn-primary">Get Customers</button>
+            </div>
+        </div>
     </main>
 
     <footer>
@@ -56,7 +79,7 @@
 
 
 
-    <script src="./customers.js"></script>
+    <script src="customers.js"></script>
 
 
 </body>
