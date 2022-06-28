@@ -30,29 +30,21 @@
     </header>
 
     <main>
-        <!-- title -->
-        <h1>
-            product in store
-            <span id="total-products">(4)</span>
-        </h1>
-
-        <!-- filter bar -->
-        <div id="filter-bar">
-            <form onsubmit="return false">
-                <input type="text" name="search" id="search-field" placeholder="Search by name...">
-
-                <button onclick="searchProduct()">search</button>
-            </form>
-            <select name="sort" id="sort-field">
-                <option value="asc">A-Z</option>
-                <option value="desc">Z-A</option>
-            </select>
-        </div>
-
-        <!-- cards -->
-        <div id="products-container" class="card-group">
-            <!-- card -->
-
+        <div class="card m-5">
+            <div class="card-body">
+                <h2 class="card-title">Get All Customers</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                        </tr>
+                    </thead>
+                    <tbody id="customers-table"></tbody>
+                </table>
+                <button id="get-all-customers-button" class="btn btn-primary">Get All Customers</button>
+            </div>
         </div>
     </main>
 
@@ -64,7 +56,7 @@
 
 
 
-    <script src="app.js"></script>
+    <script src="./customers.js"></script>
 
 
 </body>
