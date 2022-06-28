@@ -38,14 +38,14 @@
 
         <!-- filter bar -->
         <div id="filter-bar">
-            <form action="">
-                <input type="text" name="search" placeholder="Search by name...">
+            <form onsubmit="return false">
+                <input type="text" name="search" id="search-field" placeholder="Search by name...">
 
-                <button>search</button>
+                <button onclick="searchProduct()">search</button>
             </form>
             <select name="sort" id="sort-field">
-                <option value="asc">A-Z</option>
-                <option value="desc">Z-A</option>
+                <option value="asc" onclick="sortProsuct()">A-Z</option>
+                <option value="desc" onclick="sortProduct()">Z-A</option>
             </select>
         </div>
 
@@ -64,9 +64,9 @@
 
 
 
-
-
     <script src="app.js"></script>
+
+
 </body>
 
 </html>
